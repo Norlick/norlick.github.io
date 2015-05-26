@@ -1,0 +1,12 @@
+{{!< layout.html }}
+<h1>Articles</h1>
+<ul id='Articles'>
+{{#each articles }}
+	<li>
+		<dl>
+			<dt><a href='{{ url }}'>{{ title }}</a></dt>
+			<dd>{{{ intro }}}</dd>
+		</dl>
+	</li>
+{{/each }}
+</ul>

@@ -1,0 +1,37 @@
+{
+  "locals": {
+    "url": "http://localhost:8080",
+    "title": "Norlick",
+    "owner": "Norlick",
+    "description": "Art, Web and Graphic Design Services",
+	"navigation": [
+		{
+			"name": "Blog",
+			"class": "blog",
+			"url": "/articles"
+		},
+		{
+			"name": "Work",
+			"class": "articles",
+			"url": "/work"
+		}
+	]
+  },
+  "plugins": [
+    "./plugins/paginator.coffee",
+    "wintersmith-handlebars"
+  ],
+  "require": {
+    "moment": "moment",
+    "_": "underscore",
+    "typogr": "typogr"
+  },
+  "handlebars": {},
+  "markdown": {
+    "smartLists": true,
+    "smartypants": true
+  },
+  "paginator": {
+    "perPage": 5
+  }
+}
