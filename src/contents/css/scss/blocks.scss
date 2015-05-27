@@ -21,7 +21,6 @@ header {
 
 	img {
 		width:100%; height:100%;
-		fill:#ffffff;
 	}
 }
 nav {
@@ -46,5 +45,5 @@ main {
 /* FOOTER ====================================================================*/
 footer {
 	display:block;
-	padding:0 1rem 0 $left-margin;
+	padding:2rem 1rem 0 $left-margin;
 }
