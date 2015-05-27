@@ -10,6 +10,7 @@ a {
 /* HEADER ====================================================================*/
 header {
 	display:block;
+	padding:1rem 0 0;
 	width:100%;
 	height:$header-height;
 }
@@ -17,9 +18,15 @@ header {
 	display:inline-block;
 	width:$left-margin;
 	height:$header-height;
+
+	img {
+		width:100%; height:100%;
+		fill:#ffffff;
+	}
 }
 nav {
 	display:inline-block;
+	vertical-align:top;
 	line-height:$header-height;
 
 	a, a:visited {}
@@ -32,12 +39,12 @@ nav {
 /* MAIN ======================================================================*/
 main {
 	display:block;
-	transform:translateX($left-margin);
+	padding:0 1rem 0 $left-margin;
 }
 
 
 /* FOOTER ====================================================================*/
 footer {
 	display:block;
-	transform:translateX($left-margin);
+	padding:0 1rem 0 $left-margin;
 }
