@@ -1,0 +1,18 @@
+// Variables
+$headerFont: 'Clear Sans Thin', sans-serif;
+$contentFont: 'Clear Sans', sans-serif;
+
+body {
+	font-family:$contentFont;
+}
+
+// Headers
+h1, h2, h3 {
+	font-family:$headerFont;
+}
+
+// Page content
+article {
+	font-family:$contentFont;
+	line-height:1.6;
+}
