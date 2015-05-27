@@ -25,10 +25,15 @@ header {
 }
 nav {
 	display:inline-block;
+	transform:translateX( -.5rem );
 	vertical-align:top;
 	line-height:$header-height;
 
-	a, a:visited {}
+	a, a:visited {
+		display:inline-block;
+		padding:.25rem;
+		margin:0 1rem 0 0;
+	}
 
 	a:hover {}
 	a:active {}

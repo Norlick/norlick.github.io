@@ -21,15 +21,19 @@ header {
 
 	img {
 		width:100%; height:100%;
-		fill:#ffffff;
 	}
 }
 nav {
 	display:inline-block;
+	transform:translateX( -.5rem );
 	vertical-align:top;
 	line-height:$header-height;
 
-	a, a:visited {}
+	a, a:visited {
+		display:inline-block;
+		padding:.25rem;
+		margin:0 1rem 0 0;
+	}
 
 	a:hover {}
 	a:active {}
@@ -46,5 +50,5 @@ main {
 /* FOOTER ====================================================================*/
 footer {
 	display:block;
-	padding:0 1rem 0 $left-margin;
+	padding:2rem 1rem 0 $left-margin;
 }
