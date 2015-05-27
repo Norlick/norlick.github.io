@@ -10,9 +10,6 @@ Did you know that 9 out of 10 bloggers prefer to write in markdown?
 
 ---
 
-Markdown: Syntax
-================
-
 
 *   [Overview](#overview)
     *   [Philosophy](#philosophy)

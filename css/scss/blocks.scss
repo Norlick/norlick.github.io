@@ -2,8 +2,23 @@
 $left-margin:10rem;
 $header-height:5rem;
 
+/* GENERAL ===================================================================*/
+html {
+	// Always display scrollbar on browsers with a scrollbar
+	height:100%;
+	margin:0 0 1px 0;
+	overflow-y:scroll;
+}
+
 a {
 	text-decoration:none;
+}
+
+
+/* CONTAINER =================================================================*/
+#Container {
+	max-width:64rem;
+	margin:0 auto 0 $header-height;
 }
 
 
@@ -43,7 +58,15 @@ nav {
 /* MAIN ======================================================================*/
 main {
 	display:block;
+	box-sizing:border-box;
+	width:100%;
 	padding:0 1rem 0 $left-margin;
+}
+
+ul#Articles {
+	margin:0;
+	padding:0;
+	list-style:none;
 }
 
 
