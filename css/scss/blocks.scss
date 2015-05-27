@@ -1,0 +1,43 @@
+// VARIABLES -------------------------------------------------------------------
+$left-margin:10rem;
+$header-height:5rem;
+
+a {
+	text-decoration:none;
+}
+
+
+/* HEADER ====================================================================*/
+header {
+	display:block;
+	width:100%;
+	height:$header-height;
+}
+#Logo {
+	display:inline-block;
+	width:$left-margin;
+	height:$header-height;
+}
+nav {
+	display:inline-block;
+	line-height:$header-height;
+
+	a, a:visited {}
+
+	a:hover {}
+	a:active {}
+}
+
+
+/* MAIN ======================================================================*/
+main {
+	display:block;
+	transform:translateX($left-margin);
+}
+
+
+/* FOOTER ====================================================================*/
+footer {
+	display:block;
+	transform:translateX($left-margin);
+}
