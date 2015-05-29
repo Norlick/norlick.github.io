@@ -5,10 +5,8 @@ $step: 10rem;
 // Always display scrollbars
 html {
 	height:100%;
-	margin:0 0 1px 0;
+	margin:0 0 1px;
 	overflow-y:scroll;
-
-	font-family:'Clear Sans', '';
 }
 
 // All containers use sexy border-box sizing
@@ -19,7 +17,7 @@ header, #Logo, main, footer {
 // Container -------------------------------------------------------------------
 #Container {
 	margin:0 auto;
-	max-width:64rem;
+	max-width:56rem;
 	width:100%;
 }
 
@@ -46,19 +44,20 @@ nav {
 		display:inline-block;
 		margin:0 1rem 0 0;
 	}
-
 }
 
 
 // Main content wrapper --------------------------------------------------------
 main {
 	width:100%;
-	padding:0 0 $step $step;
+	padding:0 2rem $step $step;
 }
 
 #Articles {
 	list-style:none;
 	padding:0;
+
+	dt { font-weight:bold; }
 
 	dd {
 		margin:0;

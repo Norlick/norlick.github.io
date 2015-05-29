@@ -12,9 +12,15 @@ $subBgCol: #E8D7F1;
 
 //------------------------------------------------------------------------------
 
-body {
+html {
 	background-color:$mainBgCol;
 	color:$mainTxtCol;
+}
+
+#Logo:hover {
+	#path3184 {
+		fill:black;
+	}
 }
 
 h1, h2, h3 {
