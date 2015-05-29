@@ -1,1 +1,37 @@
+$mainAccentCol: #FF715B;
+$subAccentCol: #D37883;
 
+$headTxtCol: #9C99A8;
+$mainTxtCol: #7B758E;
+$subTxtCol: #B2B1C6;
+$linkTxtCol: #D37883;
+$linkHovCol: #FF7C8C;
+
+$mainBgCol: #F9F5EA;
+$subBgCol: #E8D7F1;
+
+//------------------------------------------------------------------------------
+
+body {
+	background-color:$mainBgCol;
+	color:$mainTxtCol;
+}
+
+h1, h2, h3 {
+	color:$headTxtCol;
+}
+
+h2, h3 {
+	border-bottom:1px solid $subTxtCol;
+}
+
+pre { color:$subTxtCol; }
+
+a, a:visited {
+	color:$linkTxtCol;
+	border-bottom:1px solid $linkTxtCol;
+	transition:color 0.3s linear;
+}
+a:hover, a:active {
+	color:$linkHovCol;
+}
