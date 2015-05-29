@@ -1,0 +1,56 @@
+$step: 10rem;
+
+//------------------------------------------------------------------------------
+
+// Always display scrollbars
+html {
+	height:100%;
+	margin:0 0 1px 0;
+	overflow-y:scroll;
+
+	font-family:'Clear Sans', '';
+}
+
+// All containers use sexy border-box sizing
+header, #Logo, main, footer {
+	box-sizing:border-box;
+}
+
+// Container -------------------------------------------------------------------
+#Container {
+	margin:0 auto;
+	max-width:64rem;
+	width:100%;
+}
+
+
+// Page header -----------------------------------------------------------------
+header {
+	overflow:hidden;
+	padding:1rem 0 0;
+}
+#Logo {
+	width:$step;
+	padding:0 1rem;
+	float:left;
+
+	img { width:100%; }
+}
+nav {
+	float:left;
+	padding:$step*.25 0 0 0;
+}
+
+
+// Main content wrapper --------------------------------------------------------
+main {
+	width:100%;
+	padding:0 0 $step $step;
+}
+
+
+// Page footer -----------------------------------------------------------------
+footer {
+	height:$step;
+	padding:0 0 0 $step;
+}

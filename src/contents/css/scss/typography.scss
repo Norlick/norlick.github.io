@@ -1,18 +1,21 @@
-// Variables
-$headerFont: 'Clear Sans Thin', sans-serif;
-$contentFont: 'Clear Sans', sans-serif;
+// Webfonts -- thanks Goog.
+@import url(http://fonts.googleapis.com/css?family=Merriweather:300);
+@import url(http://fonts.googleapis.com/css?family=Lato);
+@import url(http://fonts.googleapis.com/css?family=Source+Code+Pro:400);
 
+// Font Families
 body {
-	font-family:$contentFont;
+	font-family:'Lato', sans-serif;
+	line-height:1.6rem;
 }
 
-// Headers
 h1, h2, h3 {
-	font-family:$headerFont;
+	font-family: 'Merriweather', serif;
+	line-height:2rem;
 }
 
-// Page content
-article {
-	font-family:$contentFont;
-	line-height:1.6;
+pre {
+	line-height:1rem;
+	font-size:1.2rem;
+	font-family: 'Source Code Pro', monospace;
 }

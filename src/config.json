@@ -3,19 +3,7 @@
     "url": "http://localhost:8080",
     "title": "Norlick",
     "owner": "Norlick",
-    "description": "Art, Web and Graphic Design Services",
-	"navigation": [
-		{
-			"name": "Blog",
-			"class": "blog",
-			"url": "/articles"
-		},
-		{
-			"name": "Work",
-			"class": "articles",
-			"url": "/work"
-		}
-	]
+    "description": "Art, Web and Graphic Design Services"
   },
   "plugins": [
     "./plugins/paginator.coffee",
