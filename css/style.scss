@@ -1,5 +1,7 @@
-// Page components
 @import 'scss/normalize';
-@import 'scss/blocks';
 @import 'scss/typography';
-@import 'scss/portrait';
+
+@import 'scss/base';
+@import 'scss/common';
+@import 'scss/content';
+@import 'scss/decoration';
