@@ -24,15 +24,18 @@ header, #Logo, main, footer {
 
 // Page header -----------------------------------------------------------------
 header {
-	overflow:hidden;
+	overflow:visible;
 	padding:1rem 0 0;
 }
 #Logo {
+	position:relative;
 	width:$step;
 	padding:0 1rem;
 	float:left;
 
-	a { border:0 none; }
+	a {
+		border:0 none;
+	}
 
 	img { width:100%; }
 }
@@ -49,6 +52,7 @@ nav {
 
 // Main content wrapper --------------------------------------------------------
 main {
+	overflow:hidden;
 	width:100%;
 	padding:0 2rem $step $step;
 }
@@ -58,7 +62,6 @@ main {
 	padding:0;
 
 	dt { font-weight:bold; }
-
 	dd {
 		margin:0;
 		p {

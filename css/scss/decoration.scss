@@ -17,12 +17,6 @@ html {
 	color:$mainTxtCol;
 }
 
-#Logo:hover {
-	#path3184 {
-		fill:black;
-	}
-}
-
 h1, h2, h3 {
 	color:$headTxtCol;
 }
@@ -40,4 +34,35 @@ a, a:visited {
 }
 a:hover, a:active {
 	color:$linkHovCol;
+}
+
+/*------------------------------------------------------------------------------
+-- ANIMATIONS ----------------------------------------------------------------*/
+@-moz-keyframes fadeIn {
+	0%		{ opacity:0; transform:translate3d( 0, 5rem, 0); }
+	100%	{ opacity:1; transform:translate3d(0,0,0); }
+}
+
+@-webkit-keyframes fadeIn {
+	0%		{ opacity:0; transform:translate3d( 0, 5rem, -5rem); }
+	100%	{ opacity:1; transform:translate3d(0,0,0); }
+}
+
+@keyframes fadeIn {
+	0%		{ opacity:0; transform:translateY(5rem); }
+	100%	{ opacity:1; transform:translateY(0); }
+}
+
+#Logo a img {
+	transform:scale3d( 1,1,1 );
+	transition:transform .2s ease-out;
+}
+#Logo a:hover img {
+	transform:scale3d( 1.05,1.05,1.05 );
+}
+
+#Container {
+	-moz-animation:fadeIn .5s ease-out;
+	-webkit-animation:fadeIn .5s ease-out;
+	animation:fadeIn .5s ease-out;
 }
