@@ -32,16 +32,13 @@ header {
 	width:$step;
 	padding:0 1rem;
 
-	a {
-		border:0 none;
-	}
-
+	a { border:0 none; }
 	img { width:100%; }
 }
 nav {
 	width:100%;
 	padding:$step*.25 0 0 0;
-	margin:0 $step 0;
+	margin:0 $step 0 $step;
 
 	a {
 		display:inline-block;

@@ -10,7 +10,7 @@ html {
 }
 
 // All containers use sexy border-box sizing
-header, #Logo, main, footer {
+header, #Logo, nav, main, footer {
 	box-sizing:border-box;
 }
 
@@ -28,24 +28,21 @@ header {
 	padding:1rem 0 0;
 }
 #Logo {
-	position:relative;
+	position:absolute;
 	width:$step;
 	padding:0 1rem;
-	float:left;
 
-	a {
-		border:0 none;
-	}
-
+	a { border:0 none; }
 	img { width:100%; }
 }
 nav {
-	float:left;
+	width:100%;
 	padding:$step*.25 0 0 0;
+	margin:0 $step 0 $step;
 
 	a {
 		display:inline-block;
-		margin:0 1rem 0 0;
+		margin:0 1rem -1px 0;
 	}
 }
 

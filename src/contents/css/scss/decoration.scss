@@ -55,16 +55,16 @@ nav {
 /*------------------------------------------------------------------------------
 -- ANIMATIONS ----------------------------------------------------------------*/
 @-moz-keyframes fadeIn {
-	0%		{ opacity:0; transform:translate3d( 0, 5rem, 0); }
-	100%	{ opacity:1; transform:translate3d(0,0,0); }
+	0%		{ opacity:0; }
+	100%	{ opacity:1; }
 }
 @-webkit-keyframes fadeIn {
-	0%		{ opacity:0; transform:translate3d( 0, 5rem, 0); }
-	100%	{ opacity:1; transform:translate3d(0,0,0); }
+	0%		{ opacity:0; }
+	100%	{ opacity:1; }
 }
 @keyframes fadeIn {
-	0%		{ opacity:0; transform:translate3d( 0, 5rem, 0); }
-	100%	{ opacity:1; transform:translate3d(0,0,0); }
+	0%		{ opacity:0; }
+	100%	{ opacity:1; }
 }
 
 #Logo a img {
@@ -76,7 +76,7 @@ nav {
 }
 
 #Container {
-	-moz-animation:fadeIn .5s ease-out;
-	-webkit-animation:fadeIn .5s ease-out;
-	animation:fadeIn .5s ease-out;
+	-moz-animation:fadeIn .75s ease-out;
+	-webkit-animation:fadeIn .75s ease-out;
+	animation:fadeIn .75s ease-out;
 }
