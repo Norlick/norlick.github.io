@@ -6,9 +6,10 @@ $mainTxtCol: #7B758E;
 $subTxtCol: #B2B1C6;
 $linkTxtCol: #D37883;
 $linkHovCol: #FF7C8C;
+$linkNavUnderline: #E6B7B7;
 
 $mainBgCol: #F9F5EA;
-$subBgCol: #E8D7F1;
+$subBgCol: #F0D6D0;
 
 //------------------------------------------------------------------------------
 
@@ -30,10 +31,25 @@ pre { color:$subTxtCol; }
 a, a:visited {
 	color:$linkTxtCol;
 	border-bottom:1px solid $linkTxtCol;
-	transition:color 0.3s linear;
+	transition:color 0.3s linear, border-color 0.3s linear;
 }
 a:hover, a:active {
 	color:$linkHovCol;
+	border-color:darken( $linkHovCol, 1% );
+}
+
+nav {
+	a, a:visited {
+		border-color:$linkNavUnderline;
+	}
+	a:hover, a:active {
+		border-color:$linkTxtCol;
+	}
+
+}
+
+nav {
+	border-bottom:1px solid $subBgCol;
 }
 
 /*------------------------------------------------------------------------------
@@ -42,22 +58,20 @@ a:hover, a:active {
 	0%		{ opacity:0; transform:translate3d( 0, 5rem, 0); }
 	100%	{ opacity:1; transform:translate3d(0,0,0); }
 }
-
 @-webkit-keyframes fadeIn {
-	0%		{ opacity:0; transform:translate3d( 0, 5rem, -5rem); }
+	0%		{ opacity:0; transform:translate3d( 0, 5rem, 0); }
 	100%	{ opacity:1; transform:translate3d(0,0,0); }
 }
-
 @keyframes fadeIn {
-	0%		{ opacity:0; transform:translateY(5rem); }
-	100%	{ opacity:1; transform:translateY(0); }
+	0%		{ opacity:0; transform:translate3d( 0, 5rem, 0); }
+	100%	{ opacity:1; transform:translate3d(0,0,0); }
 }
 
 #Logo a img {
 	transform:scale3d( 1,1,1 );
 	transition:transform .2s ease-out;
 }
-#Logo a:hover img {
+#Logo a:hover img, #Logo a:focus img {
 	transform:scale3d( 1.05,1.05,1.05 );
 }
 
