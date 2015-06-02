@@ -4,28 +4,29 @@ $step: 10rem;
 
 // Always display scrollbars
 html {
-	height:100%;
 	margin:0 0 1px;
 	overflow-y:scroll;
 }
 
 // All containers use sexy border-box sizing
-header, #Logo, nav, main, footer {
+#Container, #Logo, footer {
 	box-sizing:border-box;
 }
 
 // Container -------------------------------------------------------------------
 #Container {
+	position:relative;
 	margin:0 auto;
+	padding:0 2.5% 0 0;
 	max-width:56rem;
-	width:100%;
+	width:97.5%;
 }
 
 
 // Page header -----------------------------------------------------------------
 header {
-	overflow:visible;
 	padding:1rem 0 0;
+	width:100%;
 }
 #Logo {
 	position:absolute;
@@ -36,9 +37,8 @@ header {
 	img { width:100%; }
 }
 nav {
-	width:100%;
 	padding:$step*.25 0 0 0;
-	margin:0 $step 0 $step;
+	margin:0 0 0 $step;
 
 	a {
 		display:inline-block;
@@ -49,9 +49,7 @@ nav {
 
 // Main content wrapper --------------------------------------------------------
 main {
-	overflow:hidden;
-	width:100%;
-	padding:0 2rem $step $step;
+	padding:0 2rem 2rem $step;
 }
 
 #Articles {
@@ -69,6 +67,6 @@ main {
 
 // Page footer -----------------------------------------------------------------
 footer {
-	height:$step;
-	padding:0 0 0 $step;
+	text-align:center;
+	margin:0 0 0 $step;
 }

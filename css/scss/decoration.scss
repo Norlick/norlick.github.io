@@ -22,10 +22,6 @@ h1, h2, h3 {
 	color:$headTxtCol;
 }
 
-h2, h3 {
-	border-bottom:1px solid $subTxtCol;
-}
-
 pre { color:$subTxtCol; }
 
 a, a:visited {
@@ -50,6 +46,10 @@ nav {
 
 nav {
 	border-bottom:1px solid $subBgCol;
+}
+
+footer {
+	color:$subTxtCol;
 }
 
 /*------------------------------------------------------------------------------
