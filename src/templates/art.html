@@ -1,0 +1,17 @@
+{{> header }}
+
+<h1>Art</h1>
+<article>{{{ contents }}}</article>
+<ul id='Artwork' class='list'>
+{{#each art }}
+	<li>
+		<dl>
+			<dt>{{ title }}</dt>
+			<dd><a href='../{{ path.href }}image.png'><img src='../{{ path.href }}thumb.png' alt='{{ title }}'></a></a></dd>
+			<dd>{{ description }}</dd>
+		</dl>
+	</li>
+{{/each }}
+</ul>
+
+{{> footer }}

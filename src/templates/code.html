@@ -1,0 +1,14 @@
+{{> header }}
+
+<h1>Code</h1>
+<article>{{{ contents }}}</article>
+<ul class='list'>
+{{#each code }}
+	<li>
+		<dt>{{ data.title }}</dt>
+		<dd>{{ data.description }}</dd>
+	</li>
+{{/each }}
+</ul>
+
+{{> footer }}

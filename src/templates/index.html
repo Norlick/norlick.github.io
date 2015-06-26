@@ -1,12 +1,6 @@
-{{!< layout.html }}
+{{> header }}
+
 <h1>Deadly with a paintbrush, vicious with a keyboard</h1>
-<ul id='Articles'>
-{{#each articles }}
-	<li>
-		<dl>
-			<dt><a href='{{ url }}'>{{ title }}</a></dt>
-			<dd>{{{ intro }}}</dd>
-		</dl>
-	</li>
-{{/each }}
-</ul>
+<article>{{{ contents }}}</article>
+
+{{> footer }}

@@ -1,19 +1,8 @@
-$mainAccentCol: #FF715B;
-$subAccentCol: #D37883;
+/*\
+|*| DECORATION -----------------------------------------------------------------
+\*/
 
-$headTxtCol: #9C99A8;
-$mainTxtCol: #7B758E;
-$subTxtCol: #B2B1C6;
-$linkTxtCol: #D37883;
-$linkHovCol: #FF7C8C;
-$linkNavUnderline: #E6B7B7;
-
-$mainBgCol: #F9F5EA;
-$subBgCol: #F0D6D0;
-
-//------------------------------------------------------------------------------
-
-html {
+html, body, #Container {
 	background-color:$mainBgCol;
 	color:$mainTxtCol;
 }
@@ -22,9 +11,9 @@ h1, h2, h3 {
 	color:$headTxtCol;
 }
 
-pre { color:$subTxtCol; }
-
+// LINKS -----------------------------------------------------------------------
 a, a:visited {
+	text-decoration:none;
 	color:$linkTxtCol;
 	border-bottom:1px solid $linkTxtCol;
 	transition:color 0.3s linear, border-color 0.3s linear;
@@ -34,52 +23,7 @@ a:hover, a:active {
 	border-color:darken( $linkHovCol, 1% );
 }
 
-nav {
-	a, a:visited {
-		border-color:$linkNavUnderline;
-	}
-	a:hover, a:active {
-		border-color:$linkTxtCol;
-	}
-
-}
-
+// HEADER ----------------------------------------------------------------------
 nav {
 	border-bottom:1px solid $subBgCol;
-}
-
-footer {
-	color:$subTxtCol;
-}
-
-/*------------------------------------------------------------------------------
--- ANIMATIONS ----------------------------------------------------------------*/
-@-moz-keyframes fadeIn {
-	0%		{ opacity:0; }
-	100%	{ opacity:1; }
-}
-@-webkit-keyframes fadeIn {
-	0%		{ opacity:0; }
-	100%	{ opacity:1; }
-}
-@keyframes fadeIn {
-	0%		{ opacity:0; }
-	100%	{ opacity:1; }
-}
-
-#Logo {
-	a img {
-		transform:scale3d( 1,1,1 );
-		transition:transform .2s ease-out;
-	}
-
-	a:hover img, a:focus img, a:active img {
-		transform:scale3d( 1.05,1.05,1.05 );
-	}
-}
-
-#Container {
-	-moz-animation:fadeIn .75s ease-out;
-	-webkit-animation:fadeIn .75s ease-out;
-	animation:fadeIn .75s ease-out;
 }

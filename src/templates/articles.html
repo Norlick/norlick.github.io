@@ -1,0 +1,13 @@
+{{> header }}
+
+<h1>Deadly with a paintbrush, vicious with a keyboard</h1>
+<ul id='ArticleList' class='list'>
+{{#each articles }}
+	<li>
+		<h3><a href='{{rooturl}}/{{path}}'>{{ title }}</a></h3>
+		<p>{{ tagline }} --- {{path}}</p>
+	</li>
+{{/each }}
+</ul>
+
+{{> footer }}

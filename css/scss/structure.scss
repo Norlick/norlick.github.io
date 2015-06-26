@@ -1,0 +1,73 @@
+/*\
+|*| STRUCTURE ------------------------------------------------------------------
+\*/
+
+$BaseSpan:1.6rem;
+$HorizontalSpan:$BaseSpan*5;
+$VerticalSpan:$BaseSpan;
+
+// TOP LEVEL BLOCKS ------------------------------------------------------------
+html {
+	height:100%;
+	margin:0 0 1px;
+}
+
+#Container {
+	position:relative;
+	overflow:hidden;
+	top:1rem;
+	margin:0 auto;
+	max-width:48rem;
+	width:100%;
+}
+
+// HEADER ----------------------------------------------------------------------
+header {}
+
+#Logo {
+	position:absolute;
+	width:$HorizontalSpan;
+	height:$HorizontalSpan;
+	a {
+		display:block;
+		border:0 none transparent;
+		padding:.5rem;
+	}
+	img { width:100%; }
+}
+
+nav {
+	position:relative;
+	top:$BaseSpan*1.5;
+	margin:0 0 0 $HorizontalSpan;
+	a {
+		line-height:1.6rem;
+		display:inline-block;
+		margin:0 1rem -1px 0;
+	}
+}
+
+// MAIN CONTENT ----------------------------------------------------------------
+main {
+	position:relative;
+	top:$BaseSpan*1.5;
+	margin-left:$HorizontalSpan;
+}
+
+ul.list {
+	padding:0;
+	list-style:none;
+
+	li {
+		padding:0 0 $BaseSpan*0.5;
+	}
+}
+
+dd {
+	margin:0;
+}
+
+// FOOTER ----------------------------------------------------------------------
+footer {
+	padding:$BaseSpan 0 $BaseSpan $HorizontalSpan;
+}

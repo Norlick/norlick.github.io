@@ -1,0 +1,26 @@
+/*\
+|*| VARIABLES ------------------------------------------------------------------
+\*/
+
+// Decoration ------------------------------------------------------------------
+$mainAccentCol: #FF715B;
+$subAccentCol: #D37883;
+
+$headTxtCol: #9C99A8;
+$mainTxtCol: #7B758E;
+$subTxtCol: #B2B1C6;
+$linkTxtCol: #D37883;
+$linkHovCol: #FF7C8C;
+$linkNavUnderline: #E6B7B7;
+
+$mainBgCol: #F9F5EA;
+$subBgCol: #F0D6D0;
+
+
+// Typography ------------------------------------------------------------------
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,,600,700,300italic,400italic,600italic,700italic);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:300);
+
+$headTxtFont: 'Roboto Slab', sans-serif;
+$mainTxtFont: 'Source Sans Pro', sans-serif;
+$monoTxtFont: 'Source Code Pro Thin', monospace;

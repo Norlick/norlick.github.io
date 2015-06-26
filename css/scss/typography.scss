@@ -1,38 +1,47 @@
-// Webfonts -- thanks Goog.
-@import url(http://fonts.googleapis.com/css?family=Merriweather:300);
-@import url(http://fonts.googleapis.com/css?family=Lato);
-@import url(http://fonts.googleapis.com/css?family=Source+Code+Pro:400);
+/*\
+|*| TYPOGRAPHY -----------------------------------------------------------------
+\*/
 
-// Base font size
-html {
-	font-size:120%;
-}
-
-// Font Families
-body {
-	font-family:'Lato', sans-serif;
-	line-height:1.6rem;
-}
-
-p, nav {
-	font-size:1rem;
-}
-p {
-	text-align:justify;
-	line-height:1.6rem;
-}
+// Sizing ----------------------------------------------------------------------
+html { font-size:120%; }
+body { line-height:1.5rem; }
 
 h1, h2, h3 {
-	font-family:'Merriweather', serif;
-	line-height:2rem;
+	line-height:2.25rem;
 }
 
-pre {
-	line-height:1.2rem;
-	font-size:1rem;
-	font-family:'Source Code Pro', monospace;
+h1 {
+	margin:1.5rem 0;
+	font-size:2rem;
+}
+h2 {
+	font-size:1.8rem;
+}
+h3 {
+	font-size:1.2rem;
 }
 
-a {
-	text-decoration:none;
+ul.list {
+	p { margin:0; }
+	h3 { margin:0; line-height:1.5rem; }
+}
+
+// Links -----------------------------------------------------------------------
+
+
+// Fonts -----------------------------------------------------------------------
+html { font-family:$mainTxtFont; }
+
+h1, h2, h3 { font-family:$headTxtFont; }
+
+// Decoration ------------------------------------------------------------------
+dt {
+	font-weight:600;
+}
+
+article {
+	font-weight:400;
+	strong {
+		font-weight:600;
+	}
 }
